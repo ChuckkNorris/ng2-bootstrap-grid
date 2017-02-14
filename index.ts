@@ -1,35 +1,41 @@
 import {NgModule, ModuleWithProviders} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {SampleComponent} from './src/sample.component';
-import {SampleDirective} from './src/sample.directive';
-import {SamplePipe} from './src/sample.pipe';
-import {SampleService} from './src/sample.service';
 
-export * from './src/sample.component';
-export * from './src/sample.directive';
-export * from './src/sample.pipe';
-export * from './src/sample.service';
+import { BootstrapLayoutComponent } from './src/bootstrap-layout/bootstrap-layout.component';
+import { ContainerComponent } from './src/container/container.component';
+import { RowComponent } from './src/row/row.component';
+import { ColSmDirective, ColMdDirective, ColLgDirective } from './src/columns.directive';
+import { ColumnComponent } from './src/column/column.component';
+
+export * from './src/bootstrap-layout/bootstrap-layout.component';
+export * from './src/container/container.component';
+export * from './src/row/row.component';
+export * from './src/columns.directive';
+export * from './src/column/column.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-    SampleComponent,
-    SampleDirective,
-    SamplePipe
+    BootstrapLayoutComponent, 
+    ContainerComponent, 
+    RowComponent,
+    ColumnComponent,
+    ColSmDirective, ColMdDirective, ColLgDirective
   ],
   exports: [
-    SampleComponent,
-    SampleDirective,
-    SamplePipe
+    BootstrapLayoutComponent, 
+    ContainerComponent, 
+    RowComponent,
+    ColumnComponent,
+    ColSmDirective, ColMdDirective, ColLgDirective
   ]
 })
-export class SampleModule {
+export class BootstrapGridModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: SampleModule,
-      providers: [SampleService]
+      ngModule: BootstrapGridModule
     };
   }
 }
