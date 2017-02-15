@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'column',
-  templateUrl: './column.component.html',
-  styleUrls: ['./column.component.css']
+  template: '<ng-content></ng-content>',
 })
 export class ColumnComponent implements OnInit {
 
