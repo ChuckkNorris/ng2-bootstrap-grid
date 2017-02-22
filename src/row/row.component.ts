@@ -1,11 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, Renderer, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'row',
   template: `
-<div class="row">
   <ng-content></ng-content>
-</div>
 `,
   styles: [`
 .row {
@@ -47,11 +45,14 @@ import { Component, OnInit } from '@angular/core';
     margin-left: -15px;
   }
 }
-`]
+`],
+encapsulation: ViewEncapsulation.None
 })
 export class RowComponent implements OnInit {
 
-  constructor() { }
+  constructor(private element: ElementRef, private renderer: Renderer) { 
+    this.renderer.setElementClass(element.nativeElement, 'row', true);
+  }
 
   ngOnInit() {
   }

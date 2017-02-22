@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'bootstrap-layout',
+  selector: 'bootstrap-grid',
   template: '<ng-content></ng-content>',
   styles: [`
   @-ms-viewport {
@@ -862,7 +862,7 @@ html {
   `],
   encapsulation: ViewEncapsulation.None
 })
-export class BootstrapLayoutComponent implements OnInit {
+export class BootstrapGridComponent implements OnInit {
 
   constructor() { }
 

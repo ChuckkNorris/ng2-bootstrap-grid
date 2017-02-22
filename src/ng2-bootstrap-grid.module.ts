@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BootstrapLayoutComponent } from './bootstrap-layout/bootstrap-layout.component';
+import { BootstrapGridComponent } from './bootstrap-grid/bootstrap-grid.component';
 import { ContainerComponent } from './container/container.component';
 import { RowComponent } from './row/row.component';
 import { ColSmDirective, ColMdDirective, ColLgDirective } from './columns.directive';
@@ -11,18 +11,18 @@ import { ColumnComponent } from './column/column.component';
     CommonModule
   ],
   declarations: [
-    BootstrapLayoutComponent, 
+    BootstrapGridComponent, 
     ContainerComponent, 
     RowComponent,
-    ColumnComponent,
-    ColSmDirective, ColMdDirective, ColLgDirective
+    ColumnComponent
+    //ColSmDirective, ColMdDirective, ColLgDirective
   ],
   exports: [
-    BootstrapLayoutComponent, 
+    BootstrapGridComponent, 
     ContainerComponent, 
     RowComponent,
-    ColumnComponent,
-    ColSmDirective, ColMdDirective, ColLgDirective
+    ColumnComponent
+    //ColSmDirective, ColMdDirective, ColLgDirective
   ]
 })
-export class Ng2BootstrapLayoutModule { }
+export class Ng2BootstrapGridModule { }
