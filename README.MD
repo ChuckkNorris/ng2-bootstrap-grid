@@ -25,7 +25,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { SampleModule } from 'ng2-bootstrap-grid';
+import { BootstrapGridModule } from 'ng2-bootstrap-grid';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { SampleModule } from 'ng2-bootstrap-grid';
     BrowserModule,
 
     // Specify your library as an import
-    LibraryModule
+    BootstrapGridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -43,14 +43,37 @@ import { SampleModule } from 'ng2-bootstrap-grid';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+First, wrap your `app.component.html` content with `bootstrap-grid`
+```xml
+<bootstrap-grid>
+  <!--Rest of application here-->
+</bootstrap-grid>
+```
 
+Once your library is imported, you can use its components, directives and pipes in your Angular application:
 ```xml
 <!-- You can now use your library component in app.component.html -->
-<h1>
-  {{title}}
-</h1>
-<sampleComponent></sampleComponent>
+<container>
+  <row>
+    <column sm="6" md="4" lg="3">
+      Column 1
+    </column>
+    <column sm="6" md="4" lg="3">
+      Column 2
+    </column>
+    <column sm="6" md="4" lg="3">
+      Column 3
+    </column>
+    <column sm="6" md="4" lg="3">
+      Column 4
+    </column>
+  </row>
+  <row>
+    <column sm="6" smPush="3" smPull="3">
+      Centered Column
+    </column>
+  </row>
+</container>
 ```
 
 ## Development

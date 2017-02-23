@@ -1,6 +1,6 @@
 {
   "name": "ng2-bootstrap-grid",
-  "version": "0.2.3",
+  "version": "0.3.1",
   "scripts": {
     "build": "ngc -p tsconfig.json",
     "lint": "tslint src/**/*.ts",

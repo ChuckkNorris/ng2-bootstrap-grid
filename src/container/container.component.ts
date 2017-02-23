@@ -1,11 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'container',
   template: `
-<div class="container">
   <ng-content></ng-content>
-</div>
   `,
   styles: [`
   .container {
@@ -75,9 +73,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContainerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private element: ElementRef, private renderer: Renderer) { }
 
   ngOnInit() {
+    this.renderer.setElementClass(this.element.nativeElement, 'container', true);
   }
 
 }
