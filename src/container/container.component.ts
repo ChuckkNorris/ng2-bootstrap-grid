@@ -7,6 +7,7 @@ import { Component, OnInit, Renderer, ElementRef } from '@angular/core';
   `,
   styles: [`
   .container {
+  display: block;
   position: relative;
   margin-left: auto;
   margin-right: auto;
