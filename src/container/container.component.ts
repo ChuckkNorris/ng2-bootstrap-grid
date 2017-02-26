@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer, ElementRef } from '@angular/core';
+import { Component, OnInit, Renderer, ElementRef, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'container',
@@ -70,7 +70,8 @@ import { Component, OnInit, Renderer, ElementRef } from '@angular/core';
     max-width: 100%;
   }
 }
-  `]
+  `],
+  encapsulation: ViewEncapsulation.None
 })
 export class ContainerComponent implements OnInit {
 
