@@ -11,6 +11,7 @@ export class ColumnComponent implements OnInit {
   @Input() sm: number = null;
   @Input() md: number = null;
   @Input() lg: number = null;
+  @Input() xl: number = null;
   // Offset Left
   @Input() xsOffset: number = null;
   @Input() smOffset: number = null;
@@ -45,7 +46,7 @@ export class ColumnComponent implements OnInit {
   setSize() {
     let allZero = true;
     if (this.xs) {
-      allZero = false; this.setColumnClass('col-xs', this.xs);
+      allZero = false; this.setColumnClass('col', this.xs);
     }
     if (this.sm) {
       allZero = false; this.setColumnClass('col-sm', this.sm);
@@ -55,6 +56,9 @@ export class ColumnComponent implements OnInit {
     }
     if (this.lg) {
       allZero = false; this.setColumnClass('col-lg', this.lg);
+    }
+     if (this.xl) {
+      allZero = false; this.setColumnClass('col-xl', this.xl);
     }
     if (allZero) {
       this.setColumnClass('col-auto');
