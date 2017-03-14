@@ -6,7 +6,7 @@ import { ContainerComponent } from './src/container/container.component';
 import { RowComponent } from './src/row/row.component';
 import { ColSmDirective, ColMdDirective, ColLgDirective } from './src/columns.directive';
 import { ColumnComponent } from './src/column/column.component';
-import { AlignCenterDirective, AlignLeftDirective, AlignRightDirective } from './src/directives/alignments.directive';
+import { AlignCenterDirective, AlignLeftDirective, AlignRightDirective, AlignCenterLeftDirective, AlignCenterRightDirective } from './src/directives/alignments.directive';
 export * from './src/bootstrap-grid/bootstrap-grid.component';
 export * from './src/container/container.component';
 export * from './src/row/row.component';
@@ -23,7 +23,7 @@ export * from './src/directives/alignments.directive';
     ContainerComponent, 
     RowComponent,
     ColumnComponent,
-    AlignCenterDirective, AlignLeftDirective, AlignRightDirective
+    AlignCenterDirective, AlignLeftDirective, AlignRightDirective, AlignCenterRightDirective, AlignCenterLeftDirective
   ],
   exports: [
     BootstrapGridComponent, 
