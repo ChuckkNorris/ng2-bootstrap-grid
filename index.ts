@@ -30,7 +30,7 @@ export * from './src/directives/alignments.directive';
     ContainerComponent, 
     RowComponent,
     ColumnComponent,
-    AlignCenterDirective, AlignLeftDirective, AlignRightDirective
+    AlignCenterDirective, AlignLeftDirective, AlignRightDirective, AlignCenterRightDirective, AlignCenterLeftDirective
   ]
 })
 export class BootstrapGridModule {

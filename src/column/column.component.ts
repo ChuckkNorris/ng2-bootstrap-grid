@@ -67,7 +67,7 @@ export class ColumnComponent implements OnInit {
 
   setOffset() {
     if (this.xsOffset) {
-      this.setColumnClass('offset-xs', this.xsOffset);
+      this.setColumnClass('offset', this.xsOffset);
     }
     if (this.smOffset) {
       this.setColumnClass('offset-sm', this.smOffset);
@@ -82,7 +82,7 @@ export class ColumnComponent implements OnInit {
 
   setPull() {
     if (this.xsPull) {
-      this.setColumnClass('pull-xs', this.xsPull);
+      this.setColumnClass('pull', this.xsPull);
     }
     if (this.smPull) {
       this.setColumnClass('pull-sm', this.smPull);
@@ -97,7 +97,7 @@ export class ColumnComponent implements OnInit {
 
   setPush() {
     if (this.xsPush) {
-      this.setColumnClass('push-xs', this.xsPush);
+      this.setColumnClass('push', this.xsPush);
     }
     if (this.smPush) {
       this.setColumnClass('push-sm', this.smPush);
