@@ -1,5 +1,9 @@
 # ng2-bootstrap-grid
 
+## THIS LIBRARY IS NO LONGER WORKING - Updated library for Angular 5.x is in progress
+
+https://github.com/ChuckkNorris/ng-bootstrap-grid
+
 ## Installation
 
 To install this library, run:
